@@ -17,7 +17,7 @@ function App(): JSX.Element {
   };
   return (
     <main className="min-h-screen p-6 bg-gray-950 flex-center font-overpass">
-      <section className="w-101 max-w-full h-90 sm:h-104 px-6 pt-6 pb-8 sm:p-8 flex items-center bg-linear-to-bl from-gray-900 vai-gray-950/50 to-gray-900/30 rounded-2xl shadow-md">
+      <section className="w-101 max-w-full h-90 sm:h-104 px-6 pt-6 pb-8 sm:p-8 flex items-center bg-linear-to-bl from-gray-900 to-gray-900/30 rounded-2xl sm:rounded-3xl shadow-md">
         {!isRated && (
           <RatingCard
             count={starCount}
