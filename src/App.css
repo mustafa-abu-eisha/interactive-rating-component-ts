@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-primary: hsl(25, 97%, 53%);
+  --color-light: hsl(0, 100%, 100%);
+  --color-gray-500: hsl(217, 12%, 63%);
+  --color-gray-900: hsl(213, 19%, 18%);
+  --color-gray-950: hsl(216, 12%, 8%);
+
+  --font-overpass: "Overpass", sans-serif;
+}
+
+@layer components {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .card-title {
+    @apply font-bold text-2xl sm:text-[1.75rem] text-light leading-[1.2] mb-3;
+  }
+
+  .card-body {
+    @apply text-sm sm:text-[0.9375rem] text-gray-500;
+  }
+
+  .btn {
+    @apply font-bold cursor-pointer transition duration-300;
+  }
+}
