@@ -28,6 +28,7 @@ export default function RatingCard({
         {stars.map(
           (star: number): JSX.Element => (
             <button
+              type="button"
               key={star}
               className={`btn size-10 sm:size-12 flex-center rounded-full ${count === star ? "bg-light text-gray-900" : "bg-gray-900 text-gray-500"} hover:bg-primary hover:text-gray-900 focus-visible:bg-light focus-visible:text-gray-900 focus-visible:outline-0 focus-visible:hover:bg-primary focus-visible:hover:text-gray-900 transition duration-300`}
               onClick={() => handleSelectStar(star)}
@@ -38,6 +39,7 @@ export default function RatingCard({
         )}
       </div>
       <button
+        type="button"
         className="btn h-11 uppercase tracking-widest w-full flex-center rounded-4xl bg-primary text-gray-900 hover:bg-light hover:text-gray-900 focus-visible:bg-light focus-visible:text-gray-900 focus-visible:outline-0 focus-visible:hover:bg-light focus-visible:hover:text-gray-900 disabled:cursor-no-drop transition duration-300"
         disabled={count === 0}
         onClick={handleRating}
