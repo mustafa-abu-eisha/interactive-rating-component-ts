@@ -2,7 +2,11 @@ import type { JSX } from "react/jsx-runtime";
 
 import thanksIcon from "../assets/illustration-thank-you.svg";
 
-export default function ThanksCard({ count }: { count: number }): JSX.Element {
+type ThanksCardProps = {
+  count: number;
+};
+
+export default function ThanksCard({ count }: ThanksCardProps): JSX.Element {
   return (
     <article className="text-center">
       <img src={thanksIcon} alt="Thank You Illustration" className="mx-auto" />
